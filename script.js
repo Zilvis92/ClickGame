@@ -9,7 +9,9 @@ window.addEventListener('load', function(){
 
     document.querySelector('.factory').forEach(function(fc) {
         let factory = {
-            title: fc.querySelector('.title').innerText
+            title: fc.querySelector('.title').innerText,
+            cost: parseInt(fc.querySelector('.price').innerText),
+            isAdding: parseInt(fc.querySelector('.adds').innerText)
         };
     });
 });
