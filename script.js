@@ -26,9 +26,10 @@ window.addEventListener('load', function(){
         }
         ownedFactories.push(factory);
     });
-    console.log(ownedFactories);
-
-    this.setInterval(function() {
-       console.log('tick'); 
+    setInterval(function() {
+       score += ownedFactories
+        .map(x => x.count * x.isAdding)
+        .reduce((partial_sum, number) => partial_sum + number, 0);
+         scoreBlock.innerText = score; 
     }, 1000);
 });
