@@ -13,7 +13,11 @@ window.addEventListener('load', function(){
             cost: parseInt(fc.querySelector('.price').innerText),
             isAdding: parseInt(fc.querySelector('.adds').innerText),
             count: parseInt(fc.querySelector('.count').innerText.slice(1, -1)),
+            button: fc.querySelector('.button')
         };
+        factory.button.onclick = function() {
+            
+        }
         ownedFactories.push(factory);
     });
 });
