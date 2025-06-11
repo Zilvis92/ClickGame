@@ -26,4 +26,9 @@ window.addEventListener('load', function(){
         }
         ownedFactories.push(factory);
     });
+    console.log(ownedFactories);
+
+    this.setInterval(function() {
+       console.log('tick'); 
+    }, 1000);
 });
